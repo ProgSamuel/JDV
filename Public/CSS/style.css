@@ -1,0 +1,74 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Press+Start+2P&family=Rubik+Iso&family=Sigmar+One&family=VT323&display=swap');
+
+
+
+body {
+    text-align: center;
+    margin: 0%;
+    background-color: aquamarine;
+  
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    transform: translate(0, 60%);
+   
+}
+
+
+.inicial {
+    width: 350px;
+    height: 60px;
+    background-color: #F29F05;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #F29F05;
+    border: 1px solid #F2CB05;
+    display: inline-block;
+    border-radius: 20%;
+}
+
+.o {
+    position: relative;
+}
+
+.o:after {
+    position: absolute;
+    content: "\2716";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x:after {
+    position: absolute;
+    content: "\26AA";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
