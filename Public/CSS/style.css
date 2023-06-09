@@ -30,6 +30,11 @@ h1 {
     border-radius: 15px;
     margin-bottom: 20px;
     position: relative;
+    margin-top: 20vh;
+}
+
+.stage{
+    margin-top: 10vh;
 }
 
 .square {
@@ -69,4 +74,32 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media (max-width: 300px) /*  GALAXY FLOLD */ {
+h1{
+    font-size: 18px;
+
+}
+
+.inicial{
+    width: 90vw;
+    height: 6vh;
+}
+
+.square{
+    width: 65px;
+    height: 65px;
+}
+
+.o:after {
+    font-size: 30px;
+    line-height: 65px;
+    
+}
+
+.x:after {
+    font-size: 30px;
+    line-height: 65px;
+}
 }
