@@ -6,23 +6,28 @@ let gamerOver = false;
 
 
 function handleMove(position) {
-
     if (gamerOver) {
-        return;
+      return;
     }
+  
+    if (board[position] === '') {
+      board[position] = symbols[playerTime];
+      updateSquares();
+  
+  
+      gamerOver = isWin();
 
-    if (board[position] == '') {
-        board[position] = symbols[playerTime];
-
-        gamerOver = isWin();
-
-        if (gamerOver == false) {
-
-            playerTime = (playerTime == 0)?1:0;
-     }
-
-    return gamerOver;
-}
+      if (gamerOver) {
+        setTimeout(() => {
+          alert("O Jogo Acabou - O Vencedor foi " + symbols[playerTime].toUpperCase());
+        }, 10);
+        return;
+      }
+  
+      playerTime = playerTime === 0 ? 1 : 0;
+    }
+  }
+  
 
 function isWin() {
 
@@ -49,9 +54,9 @@ function isWin() {
             board[pos1] == board[pos3] && board[pos1] !=''){
 
                 return true;
-            }
+            } 
 
     }
 
     return false;
-}}
+}

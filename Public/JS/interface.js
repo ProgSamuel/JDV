@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+
+
 function handleClick(event) {
 
 
@@ -17,7 +19,7 @@ function handleClick(event) {
     if (handleMove(postion)) {
 
         setTimeout(() => {
-            alert("O Jogo Acabou - O Vencedor foi " + playerTime);
+            alert("O Jogo Acabou - O Vencedor foi " + symbols[playerTime]. toUpperCase()); 
         }, 10); 
     } ;
     updateSquares();
