@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Press+Start+2P&family=Rubik+Iso&family=Sigmar+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Press+Start+2P&family=Rubik+Iso&family=Sigmar+One&family=VT323&display=swap');
 
 
 
@@ -28,13 +28,39 @@ h1 {
     margin-right: auto;
     text-align: center;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     margin-top: 20vh;
 }
 
 .stage{
     margin-top: 10vh;
+}
+
+#restart{
+    background-color:  #0552F2 ;
+    border: 1px solid #F25E05;
+}
+#restart::after{
+    content: "\1F504";
+   
+}
+#jogador0{
+    background-color:  #0552F2;
+    border: 1px solid #F25E05;
+}
+
+#jogador0::after{
+    content: "\26AA";    
+    
+    }
+#jogador1{
+    background-color: #0552F2 ;
+    border: 1px solid #F25E05;
+}
+
+#jogador1::after{
+    content: "\2716";    
 }
 
 .square {
